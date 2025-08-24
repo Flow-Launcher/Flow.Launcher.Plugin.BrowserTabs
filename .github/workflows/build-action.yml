@@ -4,6 +4,7 @@ on:
   push:
     paths-ignore:
         - .github/workflows/*
+        - README.md
   pull_request:
 
 jobs:
