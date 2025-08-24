@@ -89,7 +89,7 @@ namespace Flow.Launcher.Plugin.BrowserTabs
 
         public string GetTranslatedPluginDescription()
         {
-            return "Search, open, and close browser tabs. A centralized plugin for managing all open tabs in your browser";
+            return "Search, activate, or close browser tabs. A centralized plugin for managing all open tabs in your browser";
         }
 
         public List<Result> LoadContextMenus(Result selectedResult)
