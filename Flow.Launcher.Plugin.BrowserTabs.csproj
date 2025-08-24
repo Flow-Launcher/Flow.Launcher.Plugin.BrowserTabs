@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+      <OutputType>Library</OutputType>
+      <TargetFramework>net7.0-windows</TargetFramework>
+      <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+      <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+      <UseWpf>true</UseWpf>
+      <Nullable>warnings</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <OutputPath>.\Output\Debug\Flow.Launcher.Plugin.BrowserTabs</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+      <OutputPath>.\Output\Release\Flow.Launcher.Plugin.BrowserTabs</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Flow.Launcher.Plugin" Version="4.7.0" />
+      <PackageReference Include="BrowserTabs" Version="0.1.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="plugin.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <Content Include="Images\*.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+</Project>

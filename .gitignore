@@ -1,0 +1,11 @@
+Output/**
+
+Output/Debug/**
+Output/Release/**
+/obj/**
+/bin/**
+/obj/x64/Release
+/obj/x64/Debug
+/.vs
+/.vscode
+/.idea

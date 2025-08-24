@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Flow.Launcher.Plugin.BrowserTabs.Views.SettingWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Flow.Launcher.Plugin.BrowserTabs.Views"
+             xmlns:ui="http://schemas.modernwpf.com/2019"
+             DataContext="{Binding RelativeSource={RelativeSource Self}, Path=Settings}"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="500">
+    <Grid Margin="{StaticResource SettingPanelMargin}">
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <CheckBox 
+                    IsChecked="{Binding SearchMinimizedWindowTabs}" 
+                    Margin="{StaticResource SettingPanelItemTopBottomMargin}"
+                    Content="Search tabs in minimized window"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
