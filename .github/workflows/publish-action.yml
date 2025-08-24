@@ -23,7 +23,6 @@ jobs:
         with:
           path: 'plugin.json'
           prop_path: 'Version'
-      - run: echo ${{steps.version.outputs.prop}}
       - name: Build
         run: |
           dotnet publish 'Flow.Launcher.Plugin.BrowserTabs.csproj' -r win-x64  -c Release -o "Flow.Launcher.Plugin.BrowserTabs-${{steps.version.outputs.prop}}"
