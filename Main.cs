@@ -44,8 +44,9 @@ namespace Flow.Launcher.Plugin.BrowserTabs
                             if (c.SpecialKeyState.CtrlPressed)
                             {
                                 tab.CloseTab();
-                                // Re-query to remove closed tab from the results
-                                Context.API.ChangeQuery(query.RawQuery, true);
+                                // Re-query to remove closed tab from the results.
+                                // Add a slight delay so re-query can pick up the tab elements again, 200ms was the right amount after testing
+                                Task.Delay(200).ContinueWith(_ => Context.API.ChangeQuery(query.RawQuery, requery: true));
                             }
                             else
                                 tab.ActivateTab();
