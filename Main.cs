@@ -11,6 +11,9 @@ namespace Flow.Launcher.Plugin.BrowserTabs
     public class Main : IAsyncPlugin, IPluginI18n, IContextMenu, ISettingProvider
     {
         public const string IconPath = "Images/icon.png";
+        public const string TabPath = "Images/tab.png";
+        public const string SwitchTabPath = "Images/switch_tab.png";
+        public const string CloseTabPath = "Images/close_tab.png";
 
         private SettingWindow? SettingWindow;
 
@@ -54,7 +57,7 @@ namespace Flow.Launcher.Plugin.BrowserTabs
                             return true;
                         },
                         ShowBadge = true,
-                        BadgeIcoPath = IconPath
+                        BadgeIcoPath = TabPath
                     });
                 }
             }
