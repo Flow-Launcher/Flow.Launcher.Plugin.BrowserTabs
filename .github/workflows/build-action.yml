@@ -1,11 +1,10 @@
 name: build
 
-on:
-  push:
-    paths-ignore:
-        - .github/workflows/*
-        - README.md
+on:        
   pull_request:
+    paths-ignore:
+      - .github/workflows/*
+      - README.md
 
 jobs:
   build:

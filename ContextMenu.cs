@@ -12,7 +12,7 @@ namespace Flow.Launcher.Plugin.BrowserTabs
                 new Result
                 {
                     Title = "Switch to tab",
-                    IcoPath = Main.IconPath,
+                    IcoPath = Main.SwitchTabPath,
                     Action = c =>
                     {
                         tab.ActivateTab();
@@ -22,7 +22,7 @@ namespace Flow.Launcher.Plugin.BrowserTabs
                 new Result
                 {
                     Title = "Close tab",
-                    IcoPath = Main.IconPath,
+                    IcoPath = Main.CloseTabPath,
                     Action = c =>
                     {
                         tab.CloseTab();
