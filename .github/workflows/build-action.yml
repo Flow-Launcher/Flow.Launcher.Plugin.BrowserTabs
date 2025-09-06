@@ -2,8 +2,9 @@ name: build
 
 on:        
   pull_request:
-    - .github/workflows/*
-    - README.md
+    paths-ignore:
+      - .github/workflows/*
+      - README.md
 
 jobs:
   build:
