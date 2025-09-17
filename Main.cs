@@ -72,6 +72,7 @@ namespace Flow.Launcher.Plugin.BrowserTabs
             {
                 "chrome" => "Images/chrome.png",
                 "msedge" => "Images/msedge.png",
+                "firefox" => "Images/firefox.png",
                 _ => "Images/chromium.png",
             };
         }
