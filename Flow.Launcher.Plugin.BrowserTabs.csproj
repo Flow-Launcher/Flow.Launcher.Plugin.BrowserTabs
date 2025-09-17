@@ -19,7 +19,7 @@
 
     <ItemGroup>
       <PackageReference Include="Flow.Launcher.Plugin" Version="4.7.0" />
-      <PackageReference Include="BrowserTabs" Version="0.1.3" />
+	    <PackageReference Include="BrowserTabs" Version="0.2.0" /> 
     </ItemGroup>
 
     <ItemGroup>

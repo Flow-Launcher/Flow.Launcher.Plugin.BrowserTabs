@@ -24,7 +24,7 @@ namespace Flow.Launcher.Plugin.BrowserTabs
         {
             var results = new List<Result>();
 
-            foreach (var tab in BrowserTabManager.GetAllChromiumTabs(token))
+            foreach (var tab in BrowserTabManager.GetAllTabs(token))
             {
                 var titleMatch = Context.API.FuzzySearch(query.Search, tab.Title);
                 var browserNameMatch = Context.API.FuzzySearch(query.Search, tab.BrowserName);
